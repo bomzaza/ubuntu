@@ -1,0 +1,12 @@
+
+enable filewaal
+*sudo ufw enable
+
+how to allow port 
+*sudo ufw allow {ssh ro 22/tcp}
+
+config ssh 
+* sudo /etc/ssh/sshd_config -> add Port {user_need as sure {Port 1000}} than save file
+
+delete port 
+*sudo ufw delete {numbered} -> how to show number --sudo ufw status numbered

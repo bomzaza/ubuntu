@@ -1,0 +1,16 @@
+frist add disk 
+check disk in system 
+ * sudo fdisk -l
+separate disk
+ * sudo fdisk /dev/sdb{name disk your sure as sdb}
+ * n {new patition}
+ * w {save and exit}
+format disk 
+ *sudo mkfs.btrfs /dev/sdb1
+mount for to use
+ *sudo mount /dev/sdb1 /{path your}
+if system reboot mount not recoreed 
+ *go to config {sudo vim /etc/fstap}
+{/dev/sdb1 | /dir_your | mkfs.btfs | defaults 0 0}
+
+	

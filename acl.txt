@@ -1,0 +1,24 @@
+check user 
+*** cat /etc/passwd || etc/shadow
+
+check group 
+*** cat /etc/group
+
+check group in members(if commanline error give install packegs members)
+*** members {name_group}
+
+assinge premistion folder acl sure user and group 
+***sudo setfacl -R -m u:{user}:{premistion} /{folder}
+***sudo setfacl -R -m g:{group_name}:{premistion as sure rwx | rw | x } /{dirletory}
+
+user aad group
+*** sudo usermod -aG {group} {name user}
+
+create group 
+*** sudo groupadd {group_name}
+
+create user
+*** sudo adduser {name_user}
+
+set password for user
+*** sudo passwd {name_user}

@@ -1,0 +1,8 @@
+check ip mask gateway and dns
+* ip a
+ -well see ip and mask
+* netstat -rm (if install net-tools) | route -rn (gateway)
+ -well see gateway
+*cat /etc/resolv.conf (DNS)
+ -well see dns
+***

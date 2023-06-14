@@ -1,0 +1,3 @@
+how to check log 
+*** sudo /var/log
+-> cat auth.log (check log for login)
